@@ -1,4 +1,13 @@
-function resetOutputs() {
+function limpar() {
+    document.getElementById("input-frase").value = "";
+    document.getElementById("input-caractere").value = "";
+    document.getElementById("input-piramide").value = "";
+    document.getElementById("input-tabuleiro").value = "";
+    document.getElementById("input-palindromo").value = "";
+    document.getElementById("input-lista").value = "";
+    document.getElementById("input-minmax1").value = "";
+    document.getElementById("input-minmax2").value = "";
+    document.getElementById("output-contar").textContent = "";
     document.getElementById("output-piramide").textContent = "";
     document.getElementById("output-tabuleiro").textContent = "";
     document.getElementById("output-palindromo").textContent = "";
@@ -56,7 +65,7 @@ function lista(){
             resultado += "Buzz";
         if( i % 3 != 0 && i % 5 != 0)
             resultado += i;
-        resultado += "\n";
+        resultado += " ";
     }
     document.getElementById("output-lista").textContent = resultado;
 }
@@ -81,4 +90,15 @@ function contarCaractere() {
     const regex = new RegExp(caractere, 'g');
     const count = (frase.match(regex) || []).length;
     document.getElementById("output-contar").textContent = `O caractere "${caractere}" aparece ${count} vezes.`;
+}
+
+function intervalo() {
+    const numero1 = parseInt(document.getElementById("input-intervalo-inicio").value);
+    const numero2 = parseInt(document.getElementById("input-intervalo-fim").value);
+    const salto = parseInt(document.getElementById("input-intervalo-salto").value);
+    let resultado = "";
+    for (let i = numero1; i <= numero2; i += salto) {
+        resultado += i + " ";
+    }
+    document.getElementById("output-intervalo").textContent = resultado;
 }

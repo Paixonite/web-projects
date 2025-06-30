@@ -8,12 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="listaJS.js"></script>
-    
+
     <h1>Lista de Javascript</h1>
 
     <div class="botoes" id ="limpar-btn">
-        <button onclick="resetOutputs()">Limpar Saídas</button>
+        <button onclick="limpar()">Limpar</button>
     </div>
 
 
@@ -67,5 +66,17 @@
         <button onclick="contarCaractere()">contar</button>
         <p id="output-contar"></p>
     </div>
+
+    <div class="questao" id="questao-7">
+        <h3>Questão 7</h3>
+        <p>Informe um intervalo e o tamanho do salto:</p>
+        De <input type="number" id="input-intervalo-inicio"/> 
+        até <input type="number" id="input-intervalo-fim"/>
+        saltando <input type="number" id="input-intervalo-salto"/>
+        <button onclick="intervalo()">imprimir</button>
+        <pre id="output-intervalo"> </pre>
+    </div>
+
+    <script src="listaJS.js"></script>
 </body>
 </html>

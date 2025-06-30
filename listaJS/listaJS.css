@@ -39,6 +39,13 @@ h1:hover {
     background: #ffe3f3;
 }
 
+.questao pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
 #limpar-btn {
     display: flex;
     justify-content: center;
