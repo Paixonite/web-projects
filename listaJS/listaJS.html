@@ -17,7 +17,7 @@
 
 
     <div class="questao" id="questao-1">
-        <h3>Questão 1</h3>
+        <h3>Desenhando um triângulo</h3>
         <p>Informe o tamanho da piramide:</p>
         <input type="number" id="input-piramide"/>
         <button onclick="piramide()">imprimir</button>
@@ -25,7 +25,7 @@
     </div>
 
     <div class="questao" id="questao-2">
-        <h3>Questão 2</h3>
+        <h3>Tabuleiro de Xadrez</h3>
         <p>Informe o tamanho do tabuleiro:</p>
         <input type="number" id="input-tabuleiro"/>
         <button onclick="tabuleiro()">imprimir</button>
@@ -33,7 +33,7 @@
     </div>
 
     <div class="questao" id="questao-3">
-        <h3>Questão 3</h3>
+        <h3>Verificando Palíndromos</h3>
         <p>Informe um palíndromo:</p>
         <input type="text" id="input-palindromo"/>
         <button onclick="palindromo()">verificar</button>
@@ -41,15 +41,15 @@
     </div>
 
     <div class="questao" id="questao-4">
-        <h3>Questão 4</h3>
+        <h3>FizzBuzz!</h3>
         <p>Informe o tamanho da lista:</p>
-        <input type="number" id="input-lista"/>
-        <button onclick="lista()">imprimir</button>
-        <pre id="output-lista"> </pre>
+        <input type="number" id="input-fizzbuzz"/>
+        <button onclick="fizzbuzz()">imprimir</button>
+        <pre id="output-fizzbuzz"> </pre>
     </div>
 
     <div class="questao" id="questao-5">
-        <h3>Questão 5</h3>
+        <h3>Mínimo e Máximo</h3>
         <p>Informe dois números:</p>
         <input type="number" id="input-minmax1"/>
         <input type="number" id="input-minmax2"/>
@@ -59,7 +59,15 @@
     </div>
 
     <div class="questao" id="questao-6">
-        <h3>Questão 6</h3>
+        <h3>Recursividade</h3>
+        <p>Informe um número:</p>
+        <input type="number" id="input-recursividade"/>
+        <button onclick="recursividade()">imprimir</button>
+        <pre id="output-recursividade"> </pre>
+    </div>
+
+    <div class="questao" id="questao-7">
+        <h3>Contando caracteres</h3>
         <p>Informe uma frase e um caractere:</p>
         <input type="text" id="input-frase"/>
         <input type="text" id="input-caractere" maxlength="1" size="1"/>
@@ -67,8 +75,8 @@
         <p id="output-contar"></p>
     </div>
 
-    <div class="questao" id="questao-7">
-        <h3>Questão 7</h3>
+    <div class="questao" id="questao-8">
+        <h3>Trabalhando com intervalos</h3>
         <p>Informe um intervalo e o tamanho do salto:</p>
         De <input type="number" id="input-intervalo-inicio"/> 
         até <input type="number" id="input-intervalo-fim"/>
@@ -77,12 +85,20 @@
         <pre id="output-intervalo"> </pre>
     </div>
 
-    <div class="questao" id="questao-8">
-        <h3>Questão 8</h3>
+    <div class="questao" id="questao-9">
+        <h3>Revertendo um array</h3>
         <p>Informe um array:</p>
         <input type="text" id="input-array" placeholder="Ex: 1,2,3,4,5"/>
         <button onclick="inverterArray()">inverter</button>
         <pre id="output-array"> </pre>
+    </div>
+
+    <div class="questao" id="questao-10">
+        <h3>Trabalhando com listas</h3>
+        <p>Informe um array:</p>
+        <input type="text" id="input-lista" placeholder="Ex: 1,2,3,4,5"/>
+        <button onclick="lista()">imprimir</button>
+        <pre id="output-lista"> </pre>
     </div>
 
     <script src="listaJS.js"></script>

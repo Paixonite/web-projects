@@ -55,8 +55,8 @@ function palindromo(){
     document.getElementById("output-palindromo").textContent = resultado;
 }
 
-function lista(){
-    const tamanho = document.getElementById("input-lista").value;
+function fizzbuzz(){
+    const tamanho = document.getElementById("input-fizzbuzz").value;
     let resultado = "";
     for (let i = 1; i <= tamanho; i++) {
         if( i % 3 == 0)
@@ -67,7 +67,7 @@ function lista(){
             resultado += i;
         resultado += " ";
     }
-    document.getElementById("output-lista").textContent = resultado;
+    document.getElementById("output-fizzbuzz").textContent = resultado;
 }
 
 function minimo(){
@@ -108,4 +108,14 @@ function inverterArray() {
     const array = input.split(",").map(Number);
     const resultado = array.reverse().join(",");
     document.getElementById("output-array").textContent = resultado;
+}
+
+function lista() {
+    const input = document.getElementById("input-lista").value;
+    const array = input.split(",").map(Number);
+    let list = null;
+    for (let i = array.length - 1; i >= 0; i--) {
+        list = { value: array[i], rest: list };
+    }
+    document.getElementById("output-lista").textContent = JSON.stringify(list, null, 2);
 }
