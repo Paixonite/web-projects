@@ -102,3 +102,10 @@ function intervalo() {
     }
     document.getElementById("output-intervalo").textContent = resultado;
 }
+
+function inverterArray() {
+    const input = document.getElementById("input-array").value;
+    const array = input.split(",").map(Number);
+    const resultado = array.reverse().join(",");
+    document.getElementById("output-array").textContent = resultado;
+}
