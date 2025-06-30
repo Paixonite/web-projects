@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="listaJS.css">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="listaJS.js"></script>
+    
+    <h1>Lista de Javascript</h1>
+
+    <div class="botoes" id ="limpar-btn">
+        <button onclick="resetOutputs()">Limpar Saídas</button>
+    </div>
+
+
+    <div class="questao" id="questao-1">
+        <h3>Questão 1</h3>
+        <p>Informe o tamanho da piramide:</p>
+        <input type="number" id="input-piramide"/>
+        <button onclick="piramide()">imprimir</button>
+        <pre id="output-piramide"> </pre>
+    </div>
+
+    <div class="questao" id="questao-2">
+        <h3>Questão 2</h3>
+        <p>Informe o tamanho do tabuleiro:</p>
+        <input type="number" id="input-tabuleiro"/>
+        <button onclick="tabuleiro()">imprimir</button>
+        <pre id="output-tabuleiro"> </pre>
+    </div>
+
+    <div class="questao" id="questao-3">
+        <h3>Questão 3</h3>
+        <p>Informe um palíndromo:</p>
+        <input type="text" id="input-palindromo"/>
+        <button onclick="palindromo()">verificar</button>
+        <pre id="output-palindromo"> </pre>
+    </div>
+
+    <div class="questao" id="questao-4">
+        <h3>Questão 4</h3>
+        <p>Informe o tamanho da lista:</p>
+        <input type="number" id="input-lista"/>
+        <button onclick="lista()">imprimir</button>
+        <pre id="output-lista"> </pre>
+    </div>
+
+    <div class="questao" id="questao-5">
+        <h3>Questão 5</h3>
+        <p>Informe dois números:</p>
+        <input type="number" id="input-minmax1"/>
+        <input type="number" id="input-minmax2"/>
+        <button onclick="minimo()">minimo</button>
+        <button onclick="maximo()">máximo</button>
+        <p id="output-minmax"></p>
+    </div>
+
+    <div class="questao" id="questao-6">
+        <h3>Questão 6</h3>
+        <p>Informe uma frase e um caractere:</p>
+        <input type="text" id="input-frase"/>
+        <input type="text" id="input-caractere" maxlength="1" size="1"/>
+        <button onclick="contarCaractere()">contar</button>
+        <p id="output-contar"></p>
+    </div>
+</body>
+</html>

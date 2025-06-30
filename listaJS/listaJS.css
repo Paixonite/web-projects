@@ -1,0 +1,71 @@
+body {
+    background-color: pink;
+    font-family: 'Comic Neue', cursive;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #f8248e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 2.5em;
+    margin: 40px auto;
+    width: fit-content;
+}
+
+h1:hover {
+    animation: blinkPink 0.3s infinite;
+}
+
+.questao {
+    background: #fff0fa;
+    border: 2px solid #f8248e;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px auto;
+    max-width: 700px;
+    font-size: 1.15em;
+    color: #a0005a;
+    box-shadow: 0 2px 8px rgba(248,36,142,0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.questao:hover {
+    box-shadow: 0 6px 18px rgba(248,36,142,0.18);
+    transform: scale(1.02);
+    border-color: #ff5cb8;
+    background: #ffe3f3;
+}
+
+#limpar-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#limpar-btn button {
+    background-color: #f8248e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 1.1em;
+    font-family: 'Comic Neue', cursive;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(248,36,142,0.10);
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+
+@keyframes blinkPink {
+    0%, 100% {
+        color: #fff;
+        background-color: #f8248e;
+    }
+    50% {
+        color: #f8248e;
+        background-color: #fff;
+    }
+}
