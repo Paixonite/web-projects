@@ -1,0 +1,147 @@
+:root {
+  --secondary-color: #dd2121;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Links */
+a {
+  color: #e40e0e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navegação */
+nav {
+  background: transparent;
+  padding: 1rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav li a {
+  font-weight: bold;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin: 1rem 0;
+    border: 3px solid var(--secondary-color);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.contato p {
+  margin: 0.3rem 0;
+}
+
+/* Seções */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.registro {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li::before {
+  content: none;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Cabeçalho Fixo */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background: #1f1f1f;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.content {
+  padding-top: 5.5rem; /* Espaço para o cabeçalho fixo */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  section {
+    padding: 0.5rem;
+  }
+}
